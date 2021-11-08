@@ -161,7 +161,7 @@ resource "azurerm_firewall_nat_rule_collection" "standard_nat_rules" {
       azurerm_public_ip.afwPIP.ip_address
     ]
 
-    translated_port = 3390
+    translated_port = 3389
 
     translated_address = "10.20.0.4"
 

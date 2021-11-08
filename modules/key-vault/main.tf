@@ -12,3 +12,8 @@ data "azurerm_key_vault_secret" "vmPassword" {
   name         = "vmPassword"
   key_vault_id = data.azurerm_key_vault.vmCreds.id
 }
+
+data "azurerm_key_vault_secret" "homeIP" {
+  name         = "homeIP"
+  key_vault_id = data.azurerm_key_vault.vmCreds.id
+}

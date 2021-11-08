@@ -70,7 +70,7 @@ module "az-firewall" {
   networkRGName = azurerm_resource_group.networkRGName.name
   hubVnetName = module.hub-network.hubNetworkName
   afwSubnet = var.afwSubnet
-  homeIP = var.homeIP
+  homeIP = module.vmKeyVault.homeIP
   logAnID = azurerm_log_analytics_workspace.LogAn_Workspace.id
 }
 
